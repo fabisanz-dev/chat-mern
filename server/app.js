@@ -16,7 +16,7 @@ const corsOptions = {
   optionsSuccessStatus: 204,
 }
 
-app.use(cors(corsOptions))
+app.use(cors())
 
 app.use(morgan('tiny'))
 app.use(express.json())
@@ -26,7 +26,7 @@ const server = http.createServer(app)
 const io = new SocketServer(server, {
   pingTimeout: 60000,
   cors: {
-    origin: '*',
+    //origin: '*',
   },
 })
 
