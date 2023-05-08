@@ -1,0 +1,20 @@
+{
+  "name": "chat-prueba",
+  "version": "1.0.0",
+  "description": "chat mern",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd server && npm install && npm cd client && npm install && npm run build",
+    "start": "node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabisanz-dev/chat-mern.git"
+  },
+  "author": "Fabian J Sanchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabisanz-dev/chat-mern/issues"
+  },
+  "homepage": "https://github.com/fabisanz-dev/chat-mern#readme"
+}
